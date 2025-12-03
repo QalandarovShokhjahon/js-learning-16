@@ -1,4 +1,4 @@
-.header {
+/* .header {
   margin: 50px auto;
   text-align: center;
 }
@@ -82,4 +82,38 @@ button {
   -ms-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
+} */
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+span {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
 }
